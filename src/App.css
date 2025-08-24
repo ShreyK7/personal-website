@@ -2,25 +2,45 @@
 
 .App {
   background-color:beige;
-  min-height: 100vh
+  height: 100vh;
+  text-align: center;
 }
 
 .navBar {
   display: flex;
   justify-content: center;
+  margin-bottom: 70px
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width:20ch }
+}
+
+@keyframes cursor {
+  from, to {border-color: transparent}
+  50% {border-color: black}
 }
 
 .mainHeader {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  display: flex;
+  max-width: fit-content;
   text-align: center;
-  color: red
+  color: red;
+  border-right: .15em solid black;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: 
+    typing 3s steps(20, end),
+    cursor 1s step-end infinite
 }
 
 .aboutText {
   text-align: center;
-  margin-right: 150px;
-  margin-left: 150px;
+  margin: auto;
+  margin-top: 40px;
+  width: 35vw;
   line-height: 30px;
 }
 
@@ -35,3 +55,4 @@
   font-family:'Space Mono', 'Verdana';
   font-weight:600
 }
+
