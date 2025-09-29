@@ -56,3 +56,32 @@
   font-weight:600
 }
 
+.navLinks li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navLinks li a:hover {
+  color: red;
+}
+
+.page {
+  padding: 20px;
+}
+
+.pageHeader {
+  color: red;
+  font-family: 'Space Mono', 'Verdana';
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.pageContent {
+  text-align: center;
+  margin: auto;
+  margin-top: 40px;
+  width: 35vw;
+  line-height: 30px;
+  font-family: 'Space Mono', 'Verdana';
+}
+
